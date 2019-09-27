@@ -1,0 +1,21 @@
+.search-input {
+    position: relative;
+    input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        padding-right: 25px;
+        border-radius: 3px;
+        line-height: 2;
+        color: #666;
+        &:focus {
+            border-color: #0099ff;
+            box-shadow: 0 0 2px #0099ff;
+        }
+    }
+    .magnify-icon {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}

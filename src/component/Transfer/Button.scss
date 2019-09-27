@@ -1,0 +1,37 @@
+.transfer-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #0099ff;
+    &:hover {
+        background-color: #33adff;
+    }
+    .inner-pattern {
+        width: 10px;
+        height: 10px;
+        &.left {
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: translate(2px, 4px) rotate(45deg);
+        }
+        &.right {
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: translate(6px, 4px) rotate(-45deg);
+        }
+    }
+    &.disabled {
+        border: 1px solid #ccc;
+        background-color: #eee;
+        cursor: not-allowed;
+        .inner-pattern {
+            &.left {
+                border-color: #aaa;
+            }
+            &.right {
+                border-color: #aaa;
+            }
+        }
+    }
+}

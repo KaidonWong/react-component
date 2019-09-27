@@ -1,0 +1,28 @@
+.panel-container {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    .check-all {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+    .search-input {
+        margin: 10px;
+    }
+    .item-list {
+        padding: 10px 0;
+        height: 150px;
+        overflow-y: auto;
+        > li {
+            padding: 5px 10px;
+            &:hover {
+                background-color: #e6f7ff;
+            }
+            &[disabled] {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

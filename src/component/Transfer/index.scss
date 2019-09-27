@@ -1,0 +1,19 @@
+.transfer-container {
+    width: 450px;
+    .left-panel {
+        float: left;
+    }
+    .right-panel {
+        float: right;
+    }
+    .buttons {
+        float: left;
+        margin-top: 30px;
+        >div {
+            margin: 15px;
+        }
+        .right-button-container {
+            margin: 15px;
+        }
+    }
+}

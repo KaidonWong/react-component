@@ -1,0 +1,40 @@
+.radio-container {
+    >div {
+        float: left;
+    }
+
+    .radio-box {
+        margin-top: 4px;
+        margin-right: 8px;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        transition: background-color 0.5s;
+        .svg-container {
+            position: relative;
+            top: -5px;
+        }
+        &.checked {
+            border-color: #0099ff;
+            background-color: #0099ff;
+        }
+    }
+    .text {
+        color: #666;
+        &:hover {
+            cursor: default;
+        }
+    }
+    &.disabled {
+        cursor: not-allowed;
+        .text {
+            color: #aaa;
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+
